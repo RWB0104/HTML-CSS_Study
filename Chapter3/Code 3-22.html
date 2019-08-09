@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 반응 선택자 : 사용자의 반응에 따른 Tag에 적용 -->
+<head>
+    <title>CSS3 Selector Basic</title>
+
+    <!--
+        :active : 마우스로 클릭한 Tag 선택
+        :hover  : 마우스를 올린 Tag 선택
+    -->
+    <style>
+        /* h1 Tag에 마우스를 올릴 경우 color 속성 지정 */
+        h1:hover
+        {
+            color: red;
+        }
+
+        /* h1 Tag를 클릭할 경우 color 속성 지정 */
+        h1:active
+        {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <h1>User Action Selection</h1>
+
+    </ul>
+</body>
+
+</html>

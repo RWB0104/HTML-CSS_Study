@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Selector Basic</title>
+
+    <style>
+        /* id 속성이 header인 후손 Tag h1과 일반적인 h2 Tag의 Color 지정 */
+        #header h1, h2
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <h2 class="sub">Lorem ipsum dolor sit amet</h2>
+    </div>
+
+    <!-- 일반적인 h2 Tag에 CSS가 적용됨 -->
+    <h2>Lorem ipsum dolor sit amet</h2>
+</body>
+
+</html>

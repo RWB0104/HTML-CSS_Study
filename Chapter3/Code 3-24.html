@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Selector Basic</title>
+
+    <style>
+        /* 활성화된 input Tag의 background-color 지정 */
+        input:enabled
+        {
+            background-color: white;
+        }
+
+        /* 비활성화된 input Tag의 background-color 지정 */
+        input:disabled
+        {
+            background-color: gray;
+        }
+
+        /* 포커스된 input Tag의 background-color 지정 */
+        input:focus
+        {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Enabled</h2>
+    <input />
+    
+    <h2>Disabled</h2>
+    <input disabled="disabled" />
+</body>
+
+</html>

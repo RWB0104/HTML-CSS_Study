@@ -6,12 +6,18 @@
 </head>
 
 <body>
+    <!--
+        action : 입력한 데이터의 전달위치 지정
+        method : 입력한 데이터의 전달방법 지정
+    -->
     <form method="get">
+        <!-- get : 데이터가 URL에 표시됨 -->
         <input type="text" name="search" />
         <input type="submit" />
     </form>
 
-    <form method="set">
+    <form method="post">
+        <!-- post : 데이터가 URL에 표시되지 않음 -->
         <input type="text" name="search" />
         <input type="submit" />
     </form>

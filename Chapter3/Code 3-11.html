@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<!-- 속성 선택자 : 특정 속성 혹은 특정 속성에 특정 값을 가진 Tag에 적용 -->
+<head>
+    <title>CSS3 Selector Basic Page</title>
+
+    <style>
+        /* input Tag 중 type 속성이 text인 Tag의 background 지정 */
+        input[type=text]
+        {
+            background: red;
+        }
+
+        /* input Tag 중 type 속성이 password인 Tag의 background 지정 */
+        input[type=password]
+        {
+            background: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <input type="text" />
+        <input type="password" />
+    </form>
+</body>
+
+</html>

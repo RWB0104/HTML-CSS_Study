@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Selector Basic Page</title>
+
+    <style>
+        /* li Tag 중 class 속성값으로 select를 가지는 Tag의 Color 지정 */
+        li.select
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- class는 일치하지만, Tag가 일치하지 않음 -->
+    <h1 class="select">Lorem ipsum</h1>
+
+    <ul>
+        <!-- class, Ta 모두 일치 -->
+        <li class="select">Lorem ipsum</li>
+
+        <!-- Tag는 일치하지만, class가 일치하지 않음 -->
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+        <li>Lorem ipsum</li>
+    </ul>
+</body>
+
+</html>
