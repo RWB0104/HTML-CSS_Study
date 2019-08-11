@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q4</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Q4</legend>
+
+        <h2>다음과 같은 코드가 있을 때 표시된 div 태그들만 선택할 수 있는 선택자를 고르시오.</h2>
+        
+        <p>
+            &lt;body&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-12" id="header"&gt;Column 12&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-3" id="aside"&gt;Column 3&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-9" id="section"&gt;Column 9&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="row"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="col-12" id="footer"&gt;Column 12&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br />
+            
+            &lt;body&gt;<br />
+        </p>
+
+        <table>
+            <tr>
+                <td>① div[class|=col]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>② div.start_with(col)</td>
+            </tr>
+
+            <tr>
+                <td>③ div.col&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>④ div[col$=class]</td>
+            </tr>
+        </table>
+        <hr />
+
+        <table>
+            <tr>
+                <td><label for="ans">Answer</label></td>
+                <td><input name="ans" type="text" style="color: gainsboro" value="① div[class|=col]"></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Selector Basic Page</title>
+
+    <!--
+        first-of-type       : 형제관계 중 첫 번째 순서의 특정 Tag 선택
+        last-of-type        : 형제관계 중 마지막 순서의 특정 Tag 선택
+        nth-of-type(n)      : 형제관계 중 앞에서 수열 n에 해당하는 특정 Tag 모두 선택
+        nth-last-of-type(n) : 형제관계 중 뒤에서 수열 n에 해당하는 특정 Tag 모두 선택
+    -->
+    <style>
+        /* 첫 번째 <h1> Tag 선택 */
+        h1:first-of-type
+        {
+            color: red;
+        }
+
+        /* 첫 번째 <h2> Tag 선택 */
+        h2:first-of-type
+        {
+            color: red;
+        }
+
+        /* 첫 번째 <h3> Tag 선택 */
+        h3:first-of-type
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h3>Header - 3</h3>
+    <h3>Header - 3</h3>
+    <h2>Header - 2</h2>
+    <h1>Header - 1</h1>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Selector Basic Page</title>
+
+    <style>
+        /* <p> Tag의 첫 번째 글자 3배 확대 */
+        p::first-letter
+        {
+            font-size: 3em;
+        }
+
+        /* <p> Tag의 첫 번째 줄 선택 */
+        p::first-line
+        {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum</h1>
+
+    <!-- Browser 크기로 인해 줄이 바뀌면 CSS가 알아서 적용된다. -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam inventore, quam nostrum optio quae nam minus rem nobis adipisci ipsam nihil omnis earum ipsum enim voluptatem, quis doloribus mollitia accusantium!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit voluptatibus commodi pariatur! Ullam dolorum sapiente quibusdam at tempore? Itaque laboriosam animi libero rem veniam facere obcaecati, quaerat atque dolore?</p>
+</body>
+
+</html>

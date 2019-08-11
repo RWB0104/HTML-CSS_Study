@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Selector Basic Page</title>
+
+    <style>
+        a
+        {
+            text-decoration: none;
+
+        }
+
+        /* visited : 방문했던 링크를 가지고 있는 <a> 선택 */
+        a:visited
+        {
+            color: red;
+        }
+
+        a:link::after
+        {
+            content: ' - ' attr(href);
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a>Nothing</a></h1>
+    <h1><a href="http://hanbit.co.kr">Hanbit Media</a></h1>
+    <h1><a href="https://github.com/">Github</a></h1>
+</body>
+
+</html>
