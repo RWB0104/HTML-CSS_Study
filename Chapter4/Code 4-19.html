@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Style Property Basic</title>
+</head>
+
+<style>
+    /* Inline은 width, height 사용 불가, margin은 좌우만 적용 */
+    #box
+    {
+        display: inline;
+
+        background-color: red;
+        width: 300px;
+        height: 50px;
+        margin: 10px;
+    }
+
+    /* Inline-Block은 width, height 사용 가능, margin은 상하좌우 적용 */
+    #box
+    {
+        display: inline-block;
+
+        background-color: red;
+        width: 300px;
+        height: 50px;
+        margin: 10px;
+    }
+</style>
+<body>
+    <span>Dummy</span>
+
+    <!-- 육안상 차이는 없으나, width, height, margin 속성 적용 시 차이가 있음 -->
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div>
+
+    <span>Dummy</span>
+</body>
+</html>

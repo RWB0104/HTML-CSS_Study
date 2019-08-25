@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS3 Style Property Basic</title>
+</head>
+
+<style>
+	/* 속성 없음 */
+	p:nth-child(1) {}
+
+	/* 2번 째 <p> 글자 크기 1배 (기본 크기) */
+	p:nth-child(2) {
+		font-size: 1.0em;
+	}
+
+	/* 3번 째 <p> 글자 크기 1.5배 */
+	p:nth-child(3) {
+		font-size: 1.5em;
+	}
+
+	/* 4번 째 <p> 글자 크기 2배 */
+	p:nth-child(4) {
+		font-size: 2.0em;
+	}
+</style>
+
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</body>
+
+</html>

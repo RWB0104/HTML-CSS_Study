@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Q5</title>
+
+    <style>
+        span.red {
+            color: red;
+        }
+
+        span.blue {
+            color: blue;
+        }
+
+        div#answer {
+            margin: 10px;
+            padding: 10px;
+            width: 100px;
+            height: 100px;
+            border: 10px solid black;
+            background-color: green;
+        }
+
+        p#sub {
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Q5</legend>
+
+        <h2>다음과 같은 스타일 속성이 적용된 div 태그의 전체 크기를 구하시오.</h2>
+        <table>
+            div {<br />&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="red">margin</span>: <span class="blue">10px</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="red">padding</span>: <span class="blue">10px</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="red">width</span>: <span class="blue">100px</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="red">height</span>: <span class="blue">100px</span>;<br />&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="red">border</span>: <span class="blue">10px solid black</span>;<br />
+            }
+        </table>
+        <hr />
+
+        <table>
+            <tr>
+                <td><label for="ans">Answer</label></td>
+                <td><input name="ans" type="text" placeholder="가로 140px, 세로 140px"></td>
+            </tr>
+
+            <div id="answer">
+                <p id="sub">Answer</p>
+            </div>
+        </table>
+    </fieldset>
+</body>
+
+</html>

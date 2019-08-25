@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Property Basic</title>
+</head>
+
+<!-- z-index : 해당 속성의 숫자가 큰 순으로 순서 지정 -->
+<style>
+    /* class가 box인 태그의 속성 지정 */
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
+    /* class가 red인 태그의 배경 및 위치, 순서 지정 */
+    .red {
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 100;
+    }
+
+    /* class가 green인 태그의 배경 및 위치, 순서 지정 */
+    .green {
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 10;
+    }
+
+    /* class가 blue인 태그의 배경 및 위치, 순서 지정 */
+    .blue {
+        background-color: blue;
+        left: 90px;
+        top: 90px;
+        z-index: 1;
+    }
+</style>
+
+<body>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+
+</html>

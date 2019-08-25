@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Style Property Basic</title>
+</head>
+
+<!--             display 속성
+    none         : Tag 숨기기
+    block        : Tag를 Block 형식으로 지정
+    inline       : Tag를 Inline 형식으로 지정
+    inline-block : Tag를 inline-block 형식으로 지정
+-->
+<style>
+    /* id="box"인 Tag 숨기기 */
+    #box
+    {
+        display: none;
+    }
+</style>
+<body>
+    <span>Dummy</span>
+    
+    <!-- CSS에 의해 사라짐 -->
+    <div id="box">
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div>
+
+    <span>Dummy</span>
+</body>
+</html>

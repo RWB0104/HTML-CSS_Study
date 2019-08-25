@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS3 Property Basic</title>
+
+    <style>
+        /* checkbox input이 체크되었을 경우 뒤따라오는 div 속성 지정 */
+        input[type=checkbox]:checked+div {
+            height: 0px;
+        }
+
+        div {
+            overflow: hidden;
+            width: 650px;
+            height: 300px;
+
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="test">Test</label>
+    <input type="checkbox" id="test" />
+
+    <div>
+        <h1>CSS3 Gradient</h1>
+    </div>
+</body>
+
+</html>
