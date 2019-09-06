@@ -1,0 +1,44 @@
+*
+{
+	font-family: "Hack-Gothic", serif;
+	margin: 0;
+	padding: 0;
+}
+
+li
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+html
+{
+
+	/* 이미지 설정 */
+	background: url("Images/Background.png");
+	background-size: cover;
+	/* 크기 설정 */
+	height: 100%;
+	overflow: hidden;
+}
+
+body
+{
+
+	/* 이미지 설정 */
+	background: url("Images/Center_Background.png");
+	height: 550px;
+	left: 50%;
+	margin-left: -480px;
+	margin-top: -275px;
+	/* 위치 설정 */
+	position: absolute;
+	top: 50%;
+
+	/* 크기 설정 */
+	width: 960px;
+}

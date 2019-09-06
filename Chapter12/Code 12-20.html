@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS3 Grid System</title>
+
+	<style>
+		* {
+			/* 기본 초기화 */
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			/* 너비 고정 and 중앙 정렬 */
+			width: 960px;
+			margin: 0 auto;
+			padding-top: 10px;
+
+			/* 그리드 구성하기 */
+			display: grid;
+			grid-template: 70px 1fr 70px / 200px 1fr;
+			grid-gap: 5px;
+		}
+
+		[class*=cell] {
+			box-sizing: border-box;
+			border: 5px solid black;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		.cell-header {
+			grid-column: 1 / 3;
+		}
+
+		.cell-footer {
+			grid-column: 1 / 3;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="cell-header">
+			<h1>Header</h1>
+		</div>
+
+		<div class="cell-aside">
+			<h2>Aside</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptas velit voluptates officia quas, veniam voluptate sint iste eum sed dicta reprehenderit quos commodi libero. Veritatis, recusandae! Ut, enim pariatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore aperiam perspiciatis, quae rem repudiandae voluptatibus dolores sapiente praesentium odio quam, eveniet nesciunt facere at recusandae odit consequatur, amet illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat doloribus, aliquam eligendi error natus qui ipsam praesentium dicta quas minus tempora vero. Veritatis corrupti in beatae repellendus, molestiae quidem sunt.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam adipisci culpa error maxime, delectus inventore ipsa alias expedita iste sit ipsum ratione repellendus, libero, nam tempore quas! Sint, quos repellat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore possimus qui at impedit accusamus eligendi corporis quam quidem, obcaecati, veritatis excepturi. Porro corrupti autem dicta culpa eligendi provident, voluptas facere! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime sint aliquam optio dolor laborum, veniam sequi? Provident aliquid et rem dolorem adipisci temporibus quia. In eaque et possimus totam quis.</p>
+		</div>
+
+		<div class="cell-content">
+			<h1>Lorem ipsum dolor sit amet</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque explicabo fugiat beatae, ipsum animi laudantium soluta. Eaque at nihil fuga labore omnis illum corrupti dolorum ratione eveniet, officia error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis numquam perferendis ex error dolore necessitatibus accusamus, et maxime, illo consectetur beatae? Sit earum unde expedita consequuntur mollitia dicta repellendus veniam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eaque neque corporis animi modi laborum ad sapiente excepturi unde mollitia, dignissimos omnis ratione voluptatum quos fuga repudiandae, cumque aperiam harum!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda unde fugit tempora, in soluta maiores neque modi quo optio suscipit nemo nihil cumque non porro voluptas iusto numquam quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam qui eius exercitationem repudiandae sapiente, recusandae nemo quod sit expedita repellat magni deleniti, quidem deserunt fugiat veniam eos, optio inventore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi illum officia obcaecati beatae, assumenda dolore rerum cum necessitatibus a, voluptas, suscipit cumque ducimus quisquam ullam rem est? Quae, sequi nulla!</p>
+		</div>
+
+		<div class="cell-footer">
+			<h1>Footer</h1>
+		</div>
+	</div>
+</body>
+
+</html>

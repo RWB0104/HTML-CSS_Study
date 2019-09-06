@@ -1,0 +1,9 @@
+div
+{
+	background: red;
+	border-radius: 5px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	width: 200px;
+}

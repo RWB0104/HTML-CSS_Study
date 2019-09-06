@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Roman Holiday</title>
+
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="stylesheet" href="Code C-34.css">
+
+	<script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+	<script>
+		$(document).ready(function()
+		{
+			// 내비게이션 버튼
+			$("#main_navigation a").click(function()
+			{
+				// 변수를 선언합니다.
+				var target = $(this).attr("data-target");
+
+				// 클래스를 적용합니다.
+				$(":not([data-name=" + target + "])").removeClass("active");
+				$("[data-name=" + target + "]").addClass("active");
+			});
+		});
+
+		$(document).ready(function()
+		{
+			// 내비게이션 버튼
+			$("#main_navigation a").click(function()
+			{
+				// 변수를 선언합니다.
+				var target = $(this).attr("data-target");
+
+				// 클래스를 적용합니다.
+				$(":not([data-name=" + target + "])").removeClass("active");
+				$("[data-name=" + target + "]").addClass("active");
+			});
+
+			// 캐릭터 이동 버튼
+			var currentPosition = 1;
+
+			$("#character > a:nth-child(1)").click(function()
+			{
+				currentPosition -= 1;
+
+				if (currentPosition < 1)
+				{
+					currentPosition = 3;
+				}
+
+				$("article").removeClass("show");
+				$("article:nth-of-type(" + currentPosition + ")").addClass("show");
+			});
+
+			$("#character > a:nth-child(2)").click(function()
+			{
+				currentPosition += 1;
+
+				if (currentPosition > 3)
+				{
+					currentPosition = 1;
+				}
+
+				$("article").removeClass("show");
+				$("article:nth-of-type(" + currentPosition + ")").addClass("show");
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<hgroup id="title">
+		<h1 data-name="information">Information</h1>
+		<h1 data-name="character">Character</h1>
+		<h1 data-name="multimedia">Multimedia</h1>
+	</hgroup>
+
+	<section id="container">
+		<!-- 메인 페이지 -->
+		<div id="main" data-name="main" class="active">
+			<img src="Images/Middle_Foreground.png" />
+		</div>
+
+		<!-- 정보 페이지 -->
+		<div id="information" data-name="information">
+			<img src="Images/Information_Image.png" />
+
+			<div class="description">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto iste maiores, omnis tempore veritatis quo quaerat voluptatibus! Quo id soluta quis, laboriosam, saepe error dolorem eaque reprehenderit exercitationem, ullam rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nemo voluptas numquam expedita consequuntur praesentium odio corporis? Rerum nam velit asperiores repudiandae adipisci quae dignissimos laborum, voluptatem mollitia eius modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aperiam dolor tempora cum aliquid quisquam corrupti, voluptatum doloribus. Necessitatibus ut fuga repellendus? Dolores autem temporibus odio adipisci ut accusantium nemo.</p>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo quaerat rerum vero. Qui tempore, animi voluptates quis, quibusdam mollitia deleniti, vero sit dignissimos magni tenetur illo. Voluptas placeat quisquam quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur veritatis fugit harum fuga, officia perspiciatis cupiditate labore hic nam accusantium incidunt ex tenetur molestiae sit ullam. Hic quibusdam corrupti aspernatur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque accusantium in id. Expedita optio voluptatem ab placeat voluptates est recusandae ducimus commodi iusto illo quod velit, exercitationem repudiandae, minus rerum.</p>
+			</div>
+		</div>
+
+		<!-- 캐릭터 페이지 -->
+		<div id="character" data-name="character">
+			<a href="#">Left Button</a>
+			<a href="#">Right Button</a>
+
+			<article class="show">
+				<h1>Princess Ann</h1>
+
+				<img src="Images/Character_Text_1.png" />
+				<img src="Images/Character_1.png" />
+
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eligendi doloribus, eum a optio consequatur explicabo, deleniti nisi odit aspernatur non, possimus deserunt sunt fuga accusantium maiores at assumenda natus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi nesciunt accusantium et in fugiat dignissimos error at modi quaerat necessitatibus? Culpa, reprehenderit minus molestias exercitationem rerum alias quod incidunt doloribus.</p>
+			</article>
+
+			<article>
+				<h1>Joe Bradley</h1>
+
+				<img src="Images/Character_Text_2.png" />
+				<img src="Images/Character_2.png" />
+
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis odit, commodi voluptatem cumque saepe corrupti ipsum consequuntur neque aut rem, doloribus nostrum, quo nesciunt harum dolorem ab deleniti vel voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque necessitatibus praesentium vitae nobis magnam nostrum at perspiciatis, iure ut totam perferendis obcaecati provident. Voluptatum aliquid animi facilis assumenda deleniti.</p>
+			</article>
+
+			<article>
+				<h1>Radovich</h1>
+
+				<img src="Images/Character_Text_3.png" />
+				<img src="Images/Character_3.png" />
+
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo perferendis hic doloremque ut animi eveniet! Dolores adipisci molestiae odio dignissimos architecto quam possimus voluptate aperiam maiores! Laboriosam soluta quod quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam autem expedita dolorem repellat optio accusantium et repellendus aut modi nemo tenetur, aperiam aspernatur asperiores voluptatibus ut quas voluptate placeat soluta.</p>
+			</article>
+		</div>
+
+		<!-- 영상 페이지 -->
+		<div id="multimedia" data-name="multimedia">
+			<video width="940" height="480" controls="controls"></video>
+		</div>
+	</section>
+
+	<nav id="main_navigation">
+		<ul>
+			<li><a href="#" data-target="information">Movie Info</a></li>
+			<li><a href="#" data-target="character">Character</a></li>
+			<li><a href="#" data-target="multimedia">Multimedia</a></li>
+			<li><a href="#">Download</a></li>
+		</ul>
+	</nav>
+</body>
+
+</html>

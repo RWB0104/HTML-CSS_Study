@@ -1,0 +1,112 @@
+*
+{
+	font-family: "Hack-Gothic", serif;
+	margin: 0;
+	padding: 0;
+}
+
+li
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+html
+{
+
+	/* 이미지 설정 */
+	background: url("Images/Background.png");
+	background-size: cover;
+	/* 크기 설정 */
+	height: 100%;
+	overflow: hidden;
+}
+
+body
+{
+
+	/* 이미지 설정 */
+	background: url("Images/Center_Background.png");
+	height: 550px;
+	left: 50%;
+	margin-left: -480px;
+	margin-top: -275px;
+	/* 위치 설정 */
+	position: absolute;
+	top: 50%;
+
+	/* 크기 설정 */
+	width: 960px;
+}
+
+#container
+{
+	height: 500px;
+}
+
+#main_navigation > ul
+{
+	overflow: hidden;
+}
+
+#main_navigation > ul > li
+{
+	float: left;
+}
+
+#main_navigation > ul > li > a
+{
+	background: url("Images/Navigation_Button.png");
+	/* 크기 설정 */
+	display: block;
+	height: 50px;
+	line-height: 50px;
+
+	/* 이미지 설정 및 글자 안 보이게 */
+	text-indent: -9999px;
+	width: 240px;
+}
+
+#main_navigation > ul > li:nth-child(1) > a
+{
+	background-position: 0 0;
+}
+
+#main_navigation > ul > li:nth-child(2) > a
+{
+	background-position: 0 -100px;
+}
+
+#main_navigation > ul > li:nth-child(3) > a
+{
+	background-position: 0 -200px;
+}
+
+#main_navigation > ul > li:nth-child(4) > a
+{
+	background-position: 0 -300px;
+}
+
+#main_navigation > ul > li:nth-child(1) > a:hover
+{
+	background-position: 0 -50px;
+}
+
+#main_navigation > ul > li:nth-child(2) > a:hover
+{
+	background-position: 0 -150px;
+}
+
+#main_navigation > ul > li:nth-child(3) > a:hover
+{
+	background-position: 0 -250px;
+}
+
+#main_navigation > ul > li:nth-child(4) > a:hover
+{
+	background-position: 0 -350px;
+}

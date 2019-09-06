@@ -1,0 +1,56 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+div
+{
+	float: left;
+	margin: 10px;
+}
+
+div:nth-child(1)
+{
+	background: -o-linear-gradient(top, #0094ff 0%, #004f89 100%);
+	background: #0094ff;
+	background: linear-gradient(top, #0094ff 0%, #004f89 100%);
+	background: -ms-linear-gradient(top, #0094ff 0%, #004f89 100%);
+	background: -moz-linear-gradient(top, #0094ff 0%, #004f89 100%);
+	background: -webkit-linear-gradient(top, #0094ff 0%, #004f89 100%);
+	border-radius: 10px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	width: 200px;
+}
+
+div:nth-child(2)
+{
+	background: -o-linear-gradient(top, #cc94ff 0%, #cc4f89 100%);
+	background: #cc94ff;
+	background: linear-gradient(top, #cc94ff 0%, #cc4f89 100%);
+	background: -ms-linear-gradient(top, #cc94ff 0%, #cc4f89 100%);
+	background: -moz-linear-gradient(top, #cc94ff 0%, #cc4f89 100%);
+	background: -webkit-linear-gradient(top, #cc94ff 0%, #cc4f89 100%);
+	border-radius: 10px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	width: 200px;
+}
+
+div:nth-child(3)
+{
+	background: -o-linear-gradient(top, #ff94ff 0%, #ff4f89 100%);
+	background: #ff94ff;
+	background: linear-gradient(top, #ff94ff 0%, #ff4f89 100%);
+	background: -ms-linear-gradient(top, #ff94ff 0%, #ff4f89 100%);
+	background: -moz-linear-gradient(top, #ff94ff 0%, #ff4f89 100%);
+	background: -webkit-linear-gradient(top, #ff94ff 0%, #ff4f89 100%);
+	border-radius: 10px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	width: 200px;
+}

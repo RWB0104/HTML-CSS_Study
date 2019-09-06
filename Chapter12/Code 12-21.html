@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS3 Grid System</title>
+
+	<style>
+		* {
+			/* 기본 초기화 */
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			/* 너비 고정 and 중앙 정렬 */
+			width: 960px;
+			margin: 0 auto;
+			padding-top: 10px;
+
+			/* 그리드 구성하기 */
+			display: grid;
+			grid-template: 70px 1fr 70px / 200px 1fr;
+			grid-gap: 5px;
+			grid-template-areas:
+				"header header"
+				"aside content"
+				"footer footer"
+		}
+
+		[class*=cell] {
+			box-sizing: border-box;
+			border: 5px solid black;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		.cell-header {
+			grid-area: header;
+		}
+
+		.cell-aside {
+			grid-area: aside;
+		}
+
+		.cell-content {
+			grid-area: content;
+		}
+
+		.cell-footer {
+			grid-column: footer;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="cell-header">
+			<h1>Lorem ipsum dolor sit amet</h1>
+		</div>
+
+		<div class="cell-aside">
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam excepturi optio placeat, facilis sed distinctio illum temporibus maxime, neque ipsa tenetur aspernatur odit aliquam, blanditiis sunt atque tempora? Eligendi, similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corporis illo numquam possimus sed, nostrum voluptatibus tempora nisi, natus expedita rem dignissimos similique sunt nesciunt ratione? Beatae, distinctio optio. Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem minus velit quia repudiandae delectus magni fuga laborum quasi ipsa laboriosam! Laudantium iusto, iure illum consectetur optio in possimus. Laboriosam, quisquam!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique impedit voluptatibus minima alias, natus maxime a quam sunt labore repellendus id nesciunt voluptates atque sint perferendis at quod aperiam tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iure suscipit? Repudiandae et enim ipsum perferendis, ipsam expedita mollitia nihil minus modi quos provident voluptatem corrupti unde explicabo iste minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis necessitatibus magnam, voluptatibus tenetur numquam, ea ducimus dignissimos deleniti nam laudantium dolores eveniet aspernatur. Illum accusamus officiis quibusdam vel vero praesentium.</p>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, vel. Perspiciatis recusandae, consequuntur libero beatae alias nisi eum. Velit iure numquam doloremque impedit aspernatur maiores, est modi a autem ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sit consequatur eligendi, aperiam consectetur veritatis amet placeat voluptatum illo suscipit cum ea qui quod ut pariatur minima hic molestiae illum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dolore, nulla ipsam consequuntur quae earum harum dolor enim asperiores inventore placeat impedit numquam voluptatum iste doloribus labore corporis tempora vero.</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate accusamus voluptas consectetur, harum sequi placeat perferendis labore mollitia quidem suscipit sunt, explicabo itaque ullam natus dolore minus modi ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, recusandae nobis eveniet repellat alias similique soluta perspiciatis aspernatur. Adipisci dolore nostrum aliquid quasi, sed architecto labore et. Ratione, quis odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione soluta fuga dolorum nam tempora perspiciatis repellat, tempore, laborum saepe eius excepturi, rem modi repudiandae voluptatibus fugit quo mollitia illo. Hic!</p>
+		</div>
+
+		<div class="cell-content">
+			<h1>Lorem ipsum dolor sit amet</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque explicabo fugiat beatae, ipsum animi laudantium soluta. Eaque at nihil fuga labore omnis illum corrupti dolorum ratione eveniet, officia error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis numquam perferendis ex error dolore necessitatibus accusamus, et maxime, illo consectetur beatae? Sit earum unde expedita consequuntur mollitia dicta repellendus veniam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus eaque neque corporis animi modi laborum ad sapiente excepturi unde mollitia, dignissimos omnis ratione voluptatum quos fuga repudiandae, cumque aperiam harum!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae assumenda unde fugit tempora, in soluta maiores neque modi quo optio suscipit nemo nihil cumque non porro voluptas iusto numquam quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ipsam qui eius exercitationem repudiandae sapiente, recusandae nemo quod sit expedita repellat magni deleniti, quidem deserunt fugiat veniam eos, optio inventore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi illum officia obcaecati beatae, assumenda dolore rerum cum necessitatibus a, voluptas, suscipit cumque ducimus quisquam ullam rem est? Quae, sequi nulla!</p>
+		</div>
+
+		<div class="cell-footer">
+			<h1>Lorem ipsum dolor sit amet</h1>
+		</div>
+	</div>
+</body>
+
+</html>
