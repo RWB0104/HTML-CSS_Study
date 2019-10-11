@@ -157,32 +157,32 @@ body
 
 #container
 {
+
+	/* 크기 설정 및 안 보이게 */
+	height: 500px;
+	margin-left: -40px;
+	overflow: hidden;
+	padding: 0 40px;
 	/* 자식의 position 속성값이 absolute 키워드이므로 적용 */
 	position: relative;
 
 	/* 내부의 그림이 좌우로 잘리는 것을 방지 */
 	width: 100%;
-	padding: 0 40px;
-	margin-left: -40px;
-
-	/* 크기 설정 및 안 보이게 */
-	height: 500px;
-	overflow: hidden;
 }
 
 div[data-name]
 {
+	height: 500px;
+	left: 40px;
 	/* 위치 설정 */
 	position: absolute;
-	left: 40px;
 	top: 550px;
-
-	/* 크기 설정 */
-	width: 960px;
-	height: 500px;
 
 	/* 애니메이션 설정 */
 	transition-duration: 2s;
+
+	/* 크기 설정 */
+	width: 960px;
 }
 
 div[data-name].active
@@ -192,25 +192,25 @@ div[data-name].active
 
 div[data-name=main] > img
 {
+	bottom: 0;
+	left: -50px;
 	/* 위치 설정 */
 	position: absolute;
-	left: -50px;
-	bottom: 0;
 }
 
 div[data-name=information] > img
 {
+	left: 20px;
 	/* 위치 설정 */
 	position: absolute;
-	left: 20px;
 	top: 20px;
 }
 
 div[data-name=information] > div
 {
+	left: 450px;
 	/* 위치 설정 */
 	position: absolute;
-	left: 450px;
 	top: 30px;
 
 	/* 크기 설정 */
@@ -224,36 +224,36 @@ div[data-name=multimedia]
 
 div[data-name=character] > a
 {
+	background: url("Images/Arrow_Images.png");
 	/* 크기 설정 */
 	display: block;
-	width: 40px;
 	height: 40px;
 
 	/* 이미지 설정 및 글자 안 보이게 */
 	text-indent: -9999px;
-	background: url("Images/Arrow_Images.png");
+	width: 40px;
 }
 
 div[data-name=character] > a:nth-child(1)
 {
 	/* 스프라이트 이미지 설정 */
 	background-position: 0 0;
+	left: 10px;
+	margin-top: -20px;
 
 	/* 위치 설정 */
 	position: absolute;
-	left: 10px;
 	top: 50%;
-	margin-top: -20px;
 }
 
 div[data-name=character] > a:nth-child(2)
 {
 	/* 스프라이트 이미지 설정 */
 	background-position: 0 -40px;
+	margin-top: -20px;
 
 	/* 위치 설정 */
 	position: absolute;
 	right: 10px;
 	top: 50%;
-	margin-top: -20px;
 }

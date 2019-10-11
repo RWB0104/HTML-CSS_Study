@@ -157,32 +157,32 @@ body
 
 #container
 {
+
+	/* 크기 설정 및 안 보이게 */
+	height: 500px;
+	margin-left: -40px;
+	overflow: hidden;
+	padding: 0 40px;
 	/* 자식의 position 속성값이 absolute 키워드이므로 적용 */
 	position: relative;
 
 	/* 내부의 그림이 좌우로 잘리는 것을 방지 */
 	width: 100%;
-	padding: 0 40px;
-	margin-left: -40px;
-
-	/* 크기 설정 및 안 보이게 */
-	height: 500px;
-	overflow: hidden;
 }
 
 div[data-name]
 {
+	height: 500px;
+	left: 40px;
 	/* 위치 설정 */
 	position: absolute;
-	left: 40px;
 	top: 550px;
-
-	/* 크기 설정 */
-	width: 960px;
-	height: 500px;
 
 	/* 애니메이션 설정 */
 	transition-duration: 2s;
+
+	/* 크기 설정 */
+	width: 960px;
 }
 
 div[data-name].active
