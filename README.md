@@ -2,7 +2,7 @@
 모던 웹을 위한 HTML5+CSS 바이블 3판
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/50317129/70815818-90276680-1e11-11ea-89f3-9c4f31e38b80.jpg" alt="모던 웹을 위한 HTML5+CSS 바이블 3판" title="모던 웹을 위한 HTML5+CSS 바이블 3판" width="30%" height="30%">
+	<img src="https://user-images.githubusercontent.com/50317129/70815818-90276680-1e11-11ea-89f3-9c4f31e38b80.jpg" alt="모던 웹을 위한 HTML5+CSS 바이블 3판" title="모던 웹을 위한 HTML5+CSS 바이블 3판" width="50%" height="50%">
 </p>
 
 | 이름 | 모던 웹을 위한 HTML5+CSS 바이블 3판 |
